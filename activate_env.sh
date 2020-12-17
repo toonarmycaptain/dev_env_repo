@@ -1,5 +1,6 @@
 #!/bin/bash
-# activate project env and move to directory by 'sourcing' ie: . ./activate_env.sh dionysus
+# activate project env and move to directory by 'sourcing' ie: . ./activate_env.sh project_name
+# or . activate_env.sh project_name or . /activate_env.sh project_name
 
 project_env_name=$1
 
