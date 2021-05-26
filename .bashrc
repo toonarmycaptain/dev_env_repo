@@ -124,9 +124,9 @@ fi
 alias iss-loc="curl -s http://api.open-notify.org/iss-now.json | jq"
 
 # Install updates
-alias run-update="sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade"
+alias run-update="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade"
 # Install updates/check for distribution upgrade/remove orphaned files
-alias run-upgrades="sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && do-release-upgrade && sudo apt-get autoremove"
+alias run-upgrades="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && do-release-upgrade && sudo apt-get autoremove"
 
 # Enable pipenv completions in bash
 eval "$(pipenv --completion)"
