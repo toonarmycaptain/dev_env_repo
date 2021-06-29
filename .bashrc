@@ -139,3 +139,5 @@ alias run-upgrades="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade
 # Enable pipenv completions in bash
 eval "$(pipenv --completion)"
 
+# Use python3 by default (python2.7 will still get python2.7 if present)
+alias python=python3
