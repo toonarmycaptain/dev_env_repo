@@ -141,3 +141,7 @@ eval "$(pipenv --completion)"
 
 # Use python3 by default (python2.7 will still get python2.7 if present)
 alias python=python3
+
+
+# Show login events (helpful for ballparking time worked)
+alias show-logins='cat /var/log/auth.log | grep lock'
