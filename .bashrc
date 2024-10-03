@@ -145,3 +145,6 @@ alias python=python3
 
 # Show login events (helpful for ballparking time worked)
 alias show-logins='cat /var/log/auth.log | grep lock'
+
+# Reset sound (sometimes useful for when sound stops working)
+alias reset-sound='sudo alsa force-reload && pulseaudio -k && pulseaudio --start'
