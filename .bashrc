@@ -143,6 +143,8 @@ alias run-upgrades="sudo apt update && sudo apt upgrade && sudo apt autoremove &
 alias python=python3
 
 
+alias fix-frozen-monitor='xrandr --output HDMI-1-0 --off && sleep 2 && xrandr --output HDMI-1-0 --mode 1680x1050 --rotate left --pos 0x203 --output DVI-I-3-2 --pos 1050x0 --output DVI-I-2-1 --pos 2970x0 --output DVI-I-4-3 --pos 4890x0 --output eDP-1 --pos 2492x1080'
+
 # Show login events (helpful for ballparking time worked)
 alias show-logins='cat /var/log/auth.log | grep lock'
 
