@@ -137,7 +137,7 @@ alias run-update="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade &
 alias run-upgrades="sudo apt update && sudo apt upgrade && sudo apt autoremove && sudo snap refresh && flatpak update && sudo apt dist-upgrade && do-release-upgrade"
 
 # Enable pipenv completions in bash
-eval "$(pipenv --completion)"
+# eval "$(pipenv --completion)" # this broke on upgrade to 22.04
 
 # Use python3 by default (python2.7 will still get python2.7 if present)
 alias python=python3
