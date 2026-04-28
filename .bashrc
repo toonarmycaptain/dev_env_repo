@@ -132,7 +132,7 @@ fi
 alias iss-loc="curl -s http://api.open-notify.org/iss-now.json | jq"
 
 # Install updates
-alias run-update="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade"
+alias run-update="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo snap refresh && flatpak update"
 # Install updates/check for distribution upgrade/remove orphaned files
 alias run-upgrades="sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && do-release-upgrade && sudo apt-get autoremove"
 
